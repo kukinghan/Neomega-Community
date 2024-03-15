@@ -1,0 +1,7 @@
+cn.kukinghan.neomega.neomgcomm.common.security.service.NeomgcommUserDetailsServiceImpl
+cn.kukinghan.neomega.neomgcomm.common.security.service.NeomgcommAppUserDetailsServiceImpl
+cn.kukinghan.neomega.neomgcomm.common.security.service.NeomgcommRedisOAuth2AuthorizationService
+cn.kukinghan.neomega.neomgcomm.common.security.service.NeomgcommRedisOAuth2AuthorizationConsentService
+cn.kukinghan.neomega.neomgcomm.common.security.component.NeomgcommSecurityInnerAspect
+cn.kukinghan.neomega.neomgcomm.common.security.component.NeomgcommSecurityMessageSourceConfiguration
+cn.kukinghan.neomega.neomgcomm.common.security.service.NeomgcommRemoteRegisteredClientRepository

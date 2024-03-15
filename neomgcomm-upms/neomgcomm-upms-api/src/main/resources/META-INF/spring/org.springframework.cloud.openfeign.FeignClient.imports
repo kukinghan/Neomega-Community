@@ -1,0 +1,6 @@
+cn.kukinghan.neomega.neomgcomm.admin.api.feign.RemoteClientDetailsService
+cn.kukinghan.neomega.neomgcomm.admin.api.feign.RemoteDictService
+cn.kukinghan.neomega.neomgcomm.admin.api.feign.RemoteLogService
+cn.kukinghan.neomega.neomgcomm.admin.api.feign.RemoteParamService
+cn.kukinghan.neomega.neomgcomm.admin.api.feign.RemoteTokenService
+cn.kukinghan.neomega.neomgcomm.admin.api.feign.RemoteUserService

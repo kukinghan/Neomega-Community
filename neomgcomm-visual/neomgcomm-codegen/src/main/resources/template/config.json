@@ -1,0 +1,12 @@
+{
+  "project": {
+    "packageName": "cn.kukinghan.neomega.neomgcomm",
+    "version": "1.0.0",
+    "backendPath": "neomgcomm",
+    "frontendPath": "neomgcomm-ui"
+  },
+  "developer": {
+    "author": "neomgcomm",
+    "email": "neomgcomm4cloud@qq.com"
+  }
+}

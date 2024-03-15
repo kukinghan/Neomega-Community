@@ -1,0 +1,6 @@
+cn.kukinghan.neomega.neomgcomm.common.core.config.TaskExecutorConfiguration
+cn.kukinghan.neomega.neomgcomm.common.core.config.JacksonConfiguration
+cn.kukinghan.neomega.neomgcomm.common.core.config.RedisTemplateConfiguration
+cn.kukinghan.neomega.neomgcomm.common.core.config.RestTemplateConfiguration
+cn.kukinghan.neomega.neomgcomm.common.core.util.SpringContextHolder
+cn.kukinghan.neomega.neomgcomm.common.core.config.WebMvcConfiguration

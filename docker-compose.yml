@@ -1,0 +1,106 @@
+version: '3'
+services:
+  neomgcomm-mysql:
+    build:
+      context: ./db
+    environment:
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+    container_name: neomgcomm-mysql
+    image: neomgcomm-mysql
+    ports:
+      - 3306:3306
+    networks:
+      - spring_cloud_default
+
+  neomgcomm-redis:
+    image: redis:7.2.4
+    ports:
+      - 6379:6379
+    restart: always
+    container_name: neomgcomm-redis
+    hostname: neomgcomm-redis
+    networks:
+      - spring_cloud_default
+
+  neomgcomm-register:
+    build:
+      context: ./neomgcomm-register
+    restart: always
+    ports:
+      - 8848:8848
+      - 9848:9848
+    container_name: neomgcomm-register
+    hostname: neomgcomm-register
+    image: neomgcomm-register
+    networks:
+      - spring_cloud_default
+
+  neomgcomm-gateway:
+    build:
+      context: ./neomgcomm-gateway
+    restart: always
+    ports:
+      - 9999:9999
+    container_name: neomgcomm-gateway
+    hostname: neomgcomm-gateway
+    image: neomgcomm-gateway
+    networks:
+      - spring_cloud_default
+
+  neomgcomm-auth:
+    build:
+      context: ./neomgcomm-auth
+    restart: always
+    container_name: neomgcomm-auth
+    hostname: neomgcomm-auth
+    image: neomgcomm-auth
+    networks:
+      - spring_cloud_default
+
+  neomgcomm-upms:
+    build:
+      context: ./neomgcomm-upms/neomgcomm-upms-biz
+    restart: always
+    container_name: neomgcomm-upms
+    hostname: neomgcomm-upms
+    image: neomgcomm-upms
+    networks:
+      - spring_cloud_default
+
+  neomgcomm-monitor:
+    build:
+      context: ./neomgcomm-visual/neomgcomm-monitor
+    restart: always
+    ports:
+      - 5001:5001
+    container_name: neomgcomm-monitor
+    hostname: neomgcomm-monitor
+    image: neomgcomm-monitor
+    networks:
+      - spring_cloud_default
+
+  neomgcomm-codegen:
+    build:
+      context: ./neomgcomm-visual/neomgcomm-codegen
+    restart: always
+    container_name: neomgcomm-codegen
+    hostname: neomgcomm-codegen
+    image: neomgcomm-codegen
+    networks:
+      - spring_cloud_default
+
+  neomgcomm-quartz:
+    build:
+      context: ./neomgcomm-visual/neomgcomm-quartz
+    restart: always
+    image: neomgcomm-quartz
+    container_name: neomgcomm-quartz
+    networks:
+      - spring_cloud_default
+
+networks:
+  spring_cloud_default:
+    name:  spring_cloud_default
+    driver: bridge

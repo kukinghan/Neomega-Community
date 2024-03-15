@@ -1,0 +1,3 @@
+cn.kukinghan.neomega.neomgcomm.common.feign.NeomgcommFeignAutoConfiguration
+cn.kukinghan.neomega.neomgcomm.common.feign.sentinel.SentinelAutoConfiguration
+cn.kukinghan.neomega.neomgcomm.common.feign.sentinel.handle.GlobalBizExceptionHandler
