@@ -1,0 +1,8 @@
+[submodule "neomComm"]
+	path = neomComm
+	url = https://github.com/kukinghan/Neomega-Community.git
+	branch = server
+[submodule "neomComm-ui"]
+	path = neomComm-ui
+	url = https://github.com/kukinghan/Neomega-Community.git
+	branch = ui
